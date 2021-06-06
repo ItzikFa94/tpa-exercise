@@ -1,5 +1,10 @@
+:import {
+  -st-from: "wix-ui-tpa/dist/src/components/Button/Button.st.css";
+  -st-default: MyButton;
+}
+
 :vars {
-  marginBetweenElements: 20px;
+  marginbetweenelements: 20px;
 }
 
 .root {
@@ -14,9 +19,12 @@
 
 .loadMore {
   /* Override background color and border radius using the style variables */
-
+  -st-mixin: MyButton(
+    MainBackgroundColor "--buttonBackgroundColor",
+    MainBorderRadius 'unit(--buttonBorderRadius, "px")'
+  );
   padding: 0 20px;
   height: 30px;
-  margin-top: value(marginBetweenElements);
+  margin-top: 20px;
   cursor: pointer;
 }

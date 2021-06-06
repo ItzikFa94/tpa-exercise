@@ -2,7 +2,7 @@ import {
   createStylesParams,
   StyleParamType,
   wixColorParam,
-} from 'yoshi-flow-editor/tpa-settings';
+} from "yoshi-flow-editor/tpa-settings";
 
 type IStylesParams = {
   buttonBackgroundColor: StyleParamType.Color;
@@ -12,7 +12,7 @@ type IStylesParams = {
 export default createStylesParams<IStylesParams>({
   buttonBackgroundColor: {
     type: StyleParamType.Color,
-    getDefaultValue: wixColorParam('color-8'),
+    getDefaultValue: wixColorParam("color-8"),
   },
   buttonBorderRadius: {
     type: StyleParamType.Number,

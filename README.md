@@ -21,7 +21,7 @@ Notice the "Load More" button at the bottom, which loads more items after clicki
 ### General
 
 - You should use both components and testkits from wix-ui-tpa.
-- You **don't** need to add additional CSS (all needed styles are already implemented), but you do need to override using style params.
+- You **don't** need to add additional CSS (all needed styles are already implemented in `Widget.st.css`), but you do need to override using style params in this file.
 - You **don't** need to create an application nor widget in the dev center, this repository is already connected to such.
 - You **don't** need to implement any data for the items but simply use [it](https://github.com/wix-private/wut-exercise/blob/master/src/components/Gallery/controller.ts#L15).
 - All tests should be completed and pass.

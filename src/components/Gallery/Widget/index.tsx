@@ -32,6 +32,7 @@ export class Widget extends React.Component<WidgetProps<ControllerProps>> {
       loadMore: !prevState.loadMore,
     }));
   };
+
   render() {
     const maxItemsPerColumn = 3;
     const maxUnhiddenRows = 4;
@@ -69,7 +70,7 @@ export class Widget extends React.Component<WidgetProps<ControllerProps>> {
                     }}
                   />
                 }
-                mediaAspectRatio={1.7777777777777777}
+                mediaAspectRatio={16 / 9}
                 stacked
               />
             </Grid.Item>
